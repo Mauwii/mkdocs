@@ -1,343 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="author" content="MkDocs Team">
-        <link rel="canonical" href="https://www.mkdocs.org/about/release-notes/">
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Release Notes - MkDocs</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
-        <link href="../../css/extra.css" rel="stylesheet">
-
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="MkDocs Team" /><link rel="canonical" href="https://www.mkdocs.org/about/release-notes/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Release Notes - MkDocs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Release Notes";
+        var mkdocs_page_input_path = "about/release-notes.md";
+        var mkdocs_page_url = "/about/release-notes/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/django.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-274394082"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      <script>hljs.initHighlightingOnLoad();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-274394082"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-          gtag('config', 'G-274394082');
-        </script> 
-    </head>
+        gtag('config', 'G-274394082');
+      </script>
+</head>
 
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="../..">MkDocs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body class="wy-body-for-nav" role="document">
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../getting-started/" class="nav-link">Getting Started</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../user-guide/" class="dropdown-item">Overview</a>
-</li>
-                                    
-<li>
-    <a href="../../user-guide/installation/" class="dropdown-item">Installation</a>
-</li>
-                                    
-<li>
-    <a href="../../user-guide/writing-your-docs/" class="dropdown-item">Writing Your Docs</a>
-</li>
-                                    
-<li>
-    <a href="../../user-guide/choosing-your-theme/" class="dropdown-item">Choosing Your Theme</a>
-</li>
-                                    
-<li>
-    <a href="../../user-guide/customizing-your-theme/" class="dropdown-item">Customizing Your Theme</a>
-</li>
-                                    
-<li>
-    <a href="../../user-guide/localizing-your-theme/" class="dropdown-item">Localizing Your Theme</a>
-</li>
-                                    
-<li>
-    <a href="../../user-guide/configuration/" class="dropdown-item">Configuration</a>
-</li>
-                                    
-<li>
-    <a href="../../user-guide/deploying-your-docs/" class="dropdown-item">Deploying Your Docs</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Developer Guide <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../dev-guide/" class="dropdown-item">Overview</a>
-</li>
-                                    
-<li>
-    <a href="../../dev-guide/themes/" class="dropdown-item">Themes</a>
-</li>
-                                    
-<li>
-    <a href="../../dev-guide/translations/" class="dropdown-item">Translations</a>
-</li>
-                                    
-<li>
-    <a href="../../dev-guide/plugins/" class="dropdown-item">Plugins</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="./" class="dropdown-item active">Release Notes</a>
-</li>
-                                    
-<li>
-    <a href="../contributing/" class="dropdown-item">Contributing</a>
-</li>
-                                    
-<li>
-    <a href="../license/" class="dropdown-item">License</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> MkDocs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../../dev-guide/plugins/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../contributing/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/mkdocs/mkdocs/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#release-notes" class="nav-link">Release Notes</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#upgrading" class="nav-link">Upgrading</a>
-              <ul class="nav flex-column">
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
               </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#maintenance-team" class="nav-link">Maintenance team</a>
-              <ul class="nav flex-column">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Getting Started</a>
+                </li>
               </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-130-2022-03-26" class="nav-link">Version 1.3.0 (2022-03-26)</a>
-              <ul class="nav flex-column">
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/writing-your-docs/">Writing Your Docs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/choosing-your-theme/">Choosing Your Theme</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/customizing-your-theme/">Customizing Your Theme</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/localizing-your-theme/">Localizing Your Theme</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/deploying-your-docs/">Deploying Your Docs</a>
+                  </li>
               </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-124-2022-03-26" class="nav-link">Version 1.2.4 (2022-03-26)</a>
-              <ul class="nav flex-column">
+              <p class="caption"><span class="caption-text">Developer Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../dev-guide/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../dev-guide/themes/">Themes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../dev-guide/translations/">Translations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../dev-guide/plugins/">Plugins</a>
+                  </li>
               </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-123-2021-10-12" class="nav-link">Version 1.2.3 (2021-10-12)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-122-2021-07-18" class="nav-link">Version 1.2.2 (2021-07-18)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-121-2021-06-09" class="nav-link">Version 1.2.1 (2021-06-09)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-12-2021-06-04" class="nav-link">Version 1.2 (2021-06-04)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-112-2020-05-14" class="nav-link">Version 1.1.2 (2020-05-14)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-111-2020-05-12" class="nav-link">Version 1.1.1 (2020-05-12)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-11-2020-02-22" class="nav-link">Version 1.1 (2020-02-22)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-104-2018-09-07" class="nav-link">Version 1.0.4 (2018-09-07)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-103-2018-08-29" class="nav-link">Version 1.0.3 (2018-08-29)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-102-2018-08-22" class="nav-link">Version 1.0.2 (2018-08-22)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-101-2018-08-13" class="nav-link">Version 1.0.1 (2018-08-13)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-10-2018-08-03" class="nav-link">Version 1.0 (2018-08-03)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0175-2018-07-06" class="nav-link">Version 0.17.5 (2018-07-06)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0174-2018-06-08" class="nav-link">Version 0.17.4 (2018-06-08)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0173-2018-03-07" class="nav-link">Version 0.17.3 (2018-03-07)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0172-2017-11-15" class="nav-link">Version 0.17.2 (2017-11-15)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0171-2017-10-30" class="nav-link">Version 0.17.1 (2017-10-30)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0170-2017-10-19" class="nav-link">Version 0.17.0 (2017-10-19)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0163-2017-04-04" class="nav-link">Version 0.16.3 (2017-04-04)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0162-2017-03-13" class="nav-link">Version 0.16.2 (2017-03-13)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0161-2016-12-22" class="nav-link">Version 0.16.1 (2016-12-22)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-016-2016-11-04" class="nav-link">Version 0.16 (2016-11-04)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0153-2016-02-18" class="nav-link">Version 0.15.3 (2016-02-18)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0152-2016-02-08" class="nav-link">Version 0.15.2 (2016-02-08)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0151-2016-01-30" class="nav-link">Version 0.15.1 (2016-01-30)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0150-2016-01-21" class="nav-link">Version 0.15.0 (2016-01-21)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0140-2015-06-09" class="nav-link">Version 0.14.0 (2015-06-09)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0133-2015-06-02" class="nav-link">Version 0.13.3 (2015-06-02)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0132-2015-05-30" class="nav-link">Version 0.13.2 (2015-05-30)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0131-2015-05-27" class="nav-link">Version 0.13.1 (2015-05-27)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0130-2015-05-26" class="nav-link">Version 0.13.0 (2015-05-26)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0122-2015-04-22" class="nav-link">Version 0.12.2 (2015-04-22)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0121-2015-04-14" class="nav-link">Version 0.12.1 (2015-04-14)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0120-2015-04-14" class="nav-link">Version 0.12.0 (2015-04-14)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0111-2014-11-20" class="nav-link">Version 0.11.1 (2014-11-20)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0110-2014-11-18" class="nav-link">Version 0.11.0 (2014-11-18)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#version-0100-2014-10-29" class="nav-link">Version 0.10.0 (2014-10-29)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Release Notes</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#upgrading">Upgrading</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#maintenance-team">Maintenance team</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-130-2022-03-26">Version 1.3.0 (2022-03-26)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#feature-upgrades">Feature upgrades</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bug-fixes">Bug fixes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#miscellaneous">Miscellaneous</a>
+    </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-124-2022-03-26">Version 1.2.4 (2022-03-26)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-123-2021-10-12">Version 1.2.3 (2021-10-12)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-122-2021-07-18">Version 1.2.2 (2021-07-18)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-121-2021-06-09">Version 1.2.1 (2021-06-09)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-12-2021-06-04">Version 1.2 (2021-06-04)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#major-additions-to-version-12">Major Additions to Version 1.2</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#support-added-for-theme-localization-2299">Support added for Theme Localization (#2299)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#support-added-for-environment-variables-in-the-configuration-file-1954">Support added for Environment Variables in the configuration file (#1954)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#support-added-for-configuration-inheritance-2218">Support added for Configuration Inheritance (#2218)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#update-gh-deploy-command-2170">Update gh-deploy command (#2170)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#rework-auto-reload-and-http-server-for-mkdocs-serve-2385">Rework auto-reload and HTTP server for mkdocs serve (#2385)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#a-build_error-event-was-added-2103">A build_error event was added (#2103)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#three-new-exceptions-builderror-pluginerror-and-abort-2103">Three new exceptions: BuildError PluginError and Abort (#2103)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#search-indexing-strategy-configuration">Search Indexing Strategy configuration</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#backward-incompatible-changes-in-12">Backward Incompatible Changes in 1.2</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-changes-and-additions-to-version-12">Other Changes and Additions to Version 1.2</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-112-2020-05-14">Version 1.1.2 (2020-05-14)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-111-2020-05-12">Version 1.1.1 (2020-05-12)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-11-2020-02-22">Version 1.1 (2020-02-22)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#major-additions-to-version-11">Major Additions to Version 1.1</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#support-for-lunrpy-as-prebuild_index-engine">Support for Lunr.py as prebuild_index engine</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#readthedocs-theme-updated-with-upstream-588-and-1374">readthedocs theme updated with upstream (#588 and #1374)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#update-mkdocs-theme-to-bootswatch-413-1563">Update mkdocs theme to Bootswatch 4.1.3 (#1563)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#improved-configuration-support-on-the-command-line-1401">Improved configuration support on the command line (#1401)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#updated-lunr-languages-support-1729">Updated lunr-languages support (#1729)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-changes-and-additions-to-version-11">Other Changes and Additions to Version 1.1</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-104-2018-09-07">Version 1.0.4 (2018-09-07)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-103-2018-08-29">Version 1.0.3 (2018-08-29)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-102-2018-08-22">Version 1.0.2 (2018-08-22)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-101-2018-08-13">Version 1.0.1 (2018-08-13)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-10-2018-08-03">Version 1.0 (2018-08-03)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#major-additions-to-version-10">Major Additions to Version 1.0</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#internal-refactor-of-pages-files-and-navigation">Internal Refactor of Pages, Files, and Navigation</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#path-based-settings-are-relative-to-configuration-file-543">Path Based Settings are Relative to Configuration File (#543)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#added-support-for-yaml-meta-data-1542">Added support for YAML Meta-Data (#1542)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#refactor-search-plugin">Refactor Search Plugin</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#theme_dir-configuration-option-fully-deprecated">theme_dir Configuration Option fully Deprecated</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-changes-and-additions-to-version-10">Other Changes and Additions to Version 1.0</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0175-2018-07-06">Version 0.17.5 (2018-07-06)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0174-2018-06-08">Version 0.17.4 (2018-06-08)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0173-2018-03-07">Version 0.17.3 (2018-03-07)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0172-2017-11-15">Version 0.17.2 (2017-11-15)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0171-2017-10-30">Version 0.17.1 (2017-10-30)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0170-2017-10-19">Version 0.17.0 (2017-10-19)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#major-additions-to-version-0170">Major Additions to Version 0.17.0</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#plugin-api-206">Plugin API. (#206)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#theme-customization-1164">Theme Customization. (#1164)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#previously-deprecated-template-variables-removed-1168">Previously deprecated Template variables removed. (#1168)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#auto-populated-extra_css-and-extra_javascript-fully-deprecated-986">Auto-Populated extra_css and extra_javascript Fully Deprecated. (#986)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-changes-and-additions-to-version-0170">Other Changes and Additions to Version 0.17.0</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0163-2017-04-04">Version 0.16.3 (2017-04-04)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0162-2017-03-13">Version 0.16.2 (2017-03-13)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0161-2016-12-22">Version 0.16.1 (2016-12-22)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-016-2016-11-04">Version 0.16 (2016-11-04)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#major-additions-to-version-0160">Major Additions to Version 0.16.0</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#template-variables-refactored-874">Template variables refactored. (#874)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#increased-template-customization-607">Increased Template Customization. (#607)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#auto-populated-extra_css-and-extra_javascript-deprecated-986">Auto-Populated extra_css and extra_javascript Deprecated. (#986)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#support-for-dirty-builds-990">Support for dirty builds. (#990)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#stricter-directory-validation">Stricter Directory Validation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-changes-and-additions-to-version-0160">Other Changes and Additions to Version 0.16.0</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0153-2016-02-18">Version 0.15.3 (2016-02-18)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0152-2016-02-08">Version 0.15.2 (2016-02-08)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0151-2016-01-30">Version 0.15.1 (2016-01-30)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0150-2016-01-21">Version 0.15.0 (2016-01-21)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#major-additions-to-version-0150">Major Additions to Version 0.15.0</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#add-support-for-installable-themes">Add support for installable themes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-changes-and-additions-to-version-0150">Other Changes and Additions to Version 0.15.0</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0140-2015-06-09">Version 0.14.0 (2015-06-09)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0133-2015-06-02">Version 0.13.3 (2015-06-02)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0132-2015-05-30">Version 0.13.2 (2015-05-30)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0131-2015-05-27">Version 0.13.1 (2015-05-27)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0130-2015-05-26">Version 0.13.0 (2015-05-26)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#deprecations-to-version-0130">Deprecations to Version 0.13.0</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#deprecate-the-json-command">Deprecate the JSON command</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#change-the-pages-configuration">Change the pages configuration</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#warn-users-about-the-removal-of-builtin-themes">Warn users about the removal of builtin themes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#major-additions-to-version-0130">Major Additions to Version 0.13.0</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#search">Search</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#new-command-line-interface">New Command Line Interface</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#support-extra-html-and-xml-files">Support Extra HTML and XML files</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-changes-and-additions-to-version-0130">Other Changes and Additions to Version 0.13.0</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0122-2015-04-22">Version 0.12.2 (2015-04-22)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0121-2015-04-14">Version 0.12.1 (2015-04-14)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0120-2015-04-14">Version 0.12.0 (2015-04-14)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0111-2014-11-20">Version 0.11.1 (2014-11-20)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0110-2014-11-18">Version 0.11.0 (2014-11-18)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-0100-2014-10-29">Version 0.10.0 (2014-10-29)</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../license/">License</a>
+                  </li>
+              </ul>
+      </div>
     </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    </nav>
 
-<h1 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link"></a></h1>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">MkDocs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>About &raquo;</li>
+      <li>Release Notes</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link"></a></h1>
 <hr />
 <h2 id="upgrading">Upgrading<a class="headerlink" href="#upgrading" title="Permanent link"></a></h2>
 <p>To upgrade MkDocs to the latest version, use pip:</p>
@@ -1714,82 +1721,56 @@ documentation.</p>
 <li>Bugfix: Fix the mkdocs command creation under Windows. (<a class="gh-link gh-issue" href="https://github.com/mkdocs/mkdocs/issues/122" title="GitHub Issue mkdocs/mkdocs #122">#122</a>)</li>
 <li>Bugfix: Correctly handle external <code>extra_javascript</code> and <code>extra_css</code>. (<a class="gh-link gh-issue" href="https://github.com/mkdocs/mkdocs/issues/92" title="GitHub Issue mkdocs/mkdocs #92">#92</a>)</li>
 <li>Bugfix: Fixed favicon support. (<a class="gh-link gh-issue" href="https://github.com/mkdocs/mkdocs/issues/87" title="GitHub Issue mkdocs/mkdocs #87">#87</a>)</li>
-</ul></div>
+</ul>
+              
             </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-                <p>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">MkDocs Team</a>.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../dev-guide/plugins/" class="btn btn-neutral float-left" title="Plugins"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../contributing/" class="btn btn-neutral float-right" title="Contributing">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">MkDocs Team</a>.</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
         </div>
-    </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/mkdocs/mkdocs/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../dev-guide/plugins/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../contributing/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
-    </body>
+</body>
 </html>
